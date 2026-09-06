@@ -102,11 +102,14 @@ export function Header() {
                                         key={item.href}
                                         href={item.href}
                                         onClick={(e) => {
+                                            e.preventDefault()
                                             setActiveNav(item.href)
                                             setIsMenuOpen(false)
                                             if (item.href.startsWith('#')) {
-                                                const target = document.querySelector(item.href)
-                                                target?.scrollIntoView({ behavior: 'smooth' })
+                                                setTimeout(() => {
+                                                    const target = document.querySelector(item.href)
+                                                    target?.scrollIntoView({ behavior: 'smooth' })
+                                                }, 350)
                                             }
                                         }}
                                         className={`block border-b-[3px] px-4 py-2 text-base font-medium text-text-secondary hover:text-text-primary transition-colors ${activeNav === item.href ? "border-secondary-500 text-text-primary" : "border-transparent"}`}
