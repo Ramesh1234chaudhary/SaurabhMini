@@ -15,6 +15,7 @@ const navigationItems = [
     { label: "About", href: "#about" },
     { label: "Blog", href: "#blog" },
     { label: "Judgment", href: "#judgment" },
+    { label: "Case Status", href: "https://ecourtsindia.com/search?q=Saurabh%20mani" },
     { label: "Contact Us", href: "#contact" }
 ]
 
