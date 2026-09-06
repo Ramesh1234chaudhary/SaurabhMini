@@ -73,7 +73,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.536.0",
-    "next": "^15.3.3",
+    "next": "^15.5.25",
     "postcss": "^8.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -82,7 +82,7 @@
     "zod": "^4.0.14"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^15.3.3",
+    "@next/bundle-analyzer": "^15.5.25",
     "@playwright/test": "^1.54.2",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.6.3",
@@ -98,7 +98,7 @@
     "chrome-launcher": "^1.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "15.5.25",
     "eslint-plugin-testing-library": "^7.1.1",
     "jsdom": "^25.0.1",
     "lighthouse": "^12.2.1",
