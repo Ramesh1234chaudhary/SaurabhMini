@@ -8,8 +8,19 @@ import { useState } from "react"
 import { ThemeToggle } from "@/components/ui/theme"
 import { LAWYER_CONFIG } from "@/config"
 
+const navigationItems = [
+    { label: "Home", href: "#home" },
+    { label: "Legal View", href: "#services" },
+    { label: "Type Of Cases", href: "#typeofCases" },
+    { label: "About", href: "#about" },
+    { label: "Blog", href: "#blog" },
+    { label: "Judgment", href: "#judgment" },
+    { label: "Contact Us", href: "#contact" }
+]
+
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [activeNav, setActiveNav] = useState("#home")
     // const { theme } = useTheme() // Removido temporariamente até implementação do tema
 
     const toggleMenu = () => {
@@ -42,47 +53,19 @@ export function Header() {
                     </motion.a>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8 lg:space-x-10">
-                        <motion.a
-                            href="#home"
-                            className="text-base lg:text-lg text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Home
-                        </motion.a>
-                        <motion.a
-                            href="#services"
-                            className="text-base lg:text-lg text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Legal View
-                        </motion.a>
-                        <motion.a
-                            href="#typeofCases"
-                            className="text-base lg:text-lg text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Type Of Cases
-                        </motion.a>
-                        <motion.a
-                            href="#about"
-                            className="text-base lg:text-lg text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            About
-                        </motion.a>
-                        <motion.a
-                            href="#contact"
-                            className="text-base lg:text-lg text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Contact Us
-                        </motion.a>
+                    <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
+                        {navigationItems.map((item) => (
+                            <motion.a
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => setActiveNav(item.href)}
+                                className={`border-b-[3px] px-1 pb-1 text-sm lg:text-base text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium ${activeNav === item.href ? "border-secondary-500 text-text-primary" : "border-transparent"}`}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                {item.label}
+                            </motion.a>
+                        ))}
 
                         {/* Theme Toggle */}
                         <ThemeToggle />
@@ -112,39 +95,21 @@ export function Header() {
                             transition={{ duration: 0.3 }}
                             className="md:hidden border-t border-border-secondary bg-background-primary/98 backdrop-blur-xl"
                         >
-                            <div className="py-4 space-y-2">
-                                <motion.a
-                                    href="#home"
-                                    className="block text-text-secondary hover:text-text-primary transition-colors px-4 py-2 text-base font-medium"
-                                    whileHover={{ x: 10 }}
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Home
-                                </motion.a>
-                                <motion.a
-                                    href="#services"
-                                    className="block text-text-secondary hover:text-text-primary transition-colors px-4 py-2 text-base font-medium"
-                                    whileHover={{ x: 10 }}
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Services
-                                </motion.a>
-                                <motion.a
-                                    href="#about"
-                                    className="block text-text-secondary hover:text-text-primary transition-colors px-4 py-2 text-base font-medium"
-                                    whileHover={{ x: 10 }}
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    About
-                                </motion.a>
-                                <motion.a
-                                    href="#contact"
-                                    className="block text-text-secondary hover:text-text-primary transition-colors px-4 py-2 text-base font-medium"
-                                    whileHover={{ x: 10 }}
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Contact
-                                </motion.a>
+                            <div className="py-3 space-y-1">
+                                {navigationItems.map((item) => (
+                                    <motion.a
+                                        key={item.href}
+                                        href={item.href}
+                                        className={`block border-b-[3px] px-4 py-2 text-base font-medium text-text-secondary hover:text-text-primary transition-colors ${activeNav === item.href ? "border-secondary-500 text-text-primary" : "border-transparent"}`}
+                                        whileHover={{ x: 10 }}
+                                        onClick={() => {
+                                            setActiveNav(item.href)
+                                            setIsMenuOpen(false)
+                                        }}
+                                    >
+                                        {item.label}
+                                    </motion.a>
+                                ))}
                             </div>
                         </motion.div>
                     )}
