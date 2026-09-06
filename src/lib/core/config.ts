@@ -17,7 +17,7 @@ export const appConfig = {
     formSubjects: [
         "Legal Consultation",
         "Civil Law",
-        "Business Law",
+        "Criminal Law",
         "Family Law",
         "Real Estate Law",
         "Labor Law",
@@ -25,7 +25,7 @@ export const appConfig = {
         "Other"
     ],
     aboutHighlights: [
-        "Specialization in Civil and Business Law",
+        "Specialization in Civil and Criminal Law",
         "More than 5 years of legal experience",
         "Personalized and transparent service",
         "Commitment to effective results"
@@ -203,13 +203,13 @@ export const seoConfig = {
     },
     description: {
         default: lawyerConfig.description,
-        services: 'Discover our practice areas: civil, business and family law. Specialized legal counsel.',
+        services: 'Discover our practice areas: civil, criminal and family law. Specialized legal counsel.',
         contact: `Contact ${lawyerConfig.name} for personalized legal counsel.`,
         about: `Meet ${lawyerConfig.name}, expert attorney with more than ${lawyerConfig.statistics.experience} years of experience.`
     },
     keywords: {
-        default: 'attorney, civil law, business law, family law, legal counsel',
-        services: 'civil law, business law, family law, law office',
+        default: 'attorney, civil law, criminal law, family law, legal counsel',
+        services: 'civil law, criminal law, family law, law office',
         contact: 'contact attorney, legal counsel',
         about: 'attorney, legal experience, law expert'
     },
@@ -267,7 +267,7 @@ export const navigationConfig = {
     ],
     LegalView: [
         { name: 'Civil Law', href: '/servicos/civil-law' },
-        { name: 'Business Law', href: '/servicos/business-law' },
+        { name: 'Criminal Law', href: '/servicos/criminal-law' },
         { name: 'Family Law', href: '/servicos/family-law' }
     ],
     legal: [

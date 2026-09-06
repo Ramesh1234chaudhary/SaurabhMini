@@ -59,7 +59,7 @@ export const LAWYER_CONFIG: LawyerConfig = {
 **✅ Correct Example:**
 
 ```typescript
-title: "Attorney - Civil and Business Law Practice";
+title: "Attorney - Civil and Criminal Law Practice";
 description: "Attorney with experience in legal practice...";
 ```
 

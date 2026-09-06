@@ -52,7 +52,7 @@ export interface LawyerPhoto {
 
 export type ServiceCategory =
     | 'civil'
-    | 'business'
+    | 'criminal'
     | 'family'
     | 'real-estate'
     | 'health'

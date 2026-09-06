@@ -51,7 +51,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                             {serviceData.description}
                         </p>
                         <div className="flex items-center justify-center space-x-4 text-text-tertiary">
-                            <span>⚖️ {lawyer.credentials.bar}</span>
+                            <span>⚖️ 10 years experience</span>
                             <span>📍 {lawyer.credentials.location}</span>
                         </div>
                     </div>

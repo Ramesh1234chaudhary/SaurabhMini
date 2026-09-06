@@ -47,7 +47,7 @@ export const LAYOUT_CONFIG: LayoutConfig = {
     },
     seo: {
         siteName: "Attorney John Smith - Law Office",
-        siteDescription: "Specialized law practice in Civil, Business and Family Law in New York, NY. Personalized service and effective legal solutions.",
+        siteDescription: "Specialized law practice in Civil, Criminal and Family Law in New York, NY. Personalized service and effective legal solutions.",
         siteUrl: "https://johnsmithlaw.com",
         defaultLanguage: "en-US",
         enableStructuredData: true

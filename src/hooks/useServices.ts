@@ -18,7 +18,7 @@ import { useCallback, useMemo, useState } from 'react'
 // TYPES
 // ============================================================================
 
-export type ServiceCategory = 'civil' | 'business' | 'family' | 'real-estate' | 'health' | 'tax'
+export type ServiceCategory = 'civil' | 'criminal' | 'family' | 'real-estate' | 'health' | 'tax'
 
 export interface ServiceFilter {
     category?: ServiceCategory
@@ -86,7 +86,7 @@ export function useServices(): UseServicesReturn {
     // ============================================================================
 
     const services = LAWYER_CONFIG.services
-    const categories: ServiceCategory[] = ['civil', 'business', 'family', 'real-estate', 'health', 'tax']
+    const categories: ServiceCategory[] = ['civil', 'criminal', 'family', 'real-estate', 'health', 'tax']
 
     // ============================================================================
     // FILTERED SERVICES

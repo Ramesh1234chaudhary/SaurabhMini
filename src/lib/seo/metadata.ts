@@ -183,7 +183,7 @@ export function generateStructuredData() {
             givenName: 'John',
             familyName: 'Smith',
             honorificPrefix: 'Attorney',
-            honorificSuffix: 'Bar Number',
+            honorificSuffix: '10 years experience',
         },
         aggregateRating: {
             '@type': 'AggregateRating',

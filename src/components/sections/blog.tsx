@@ -17,9 +17,9 @@ const articles = [
         readTime: "4 min read"
     },
     {
-        category: "Business Law",
-        title: "Legal Essentials for Small Businesses",
-        excerpt: "Key contracts, compliance checks, and preventive legal practices that help businesses grow with confidence.",
+        category: "Criminal Law",
+        title: "Legal Essentials for Criminal Cases",
+        excerpt: "Key defence strategies, bail procedures, and preventive legal practices for criminal matters.",
         readTime: "6 min read"
     }
 ]
@@ -30,7 +30,7 @@ export function Blog() {
             id="blog"
             badge="📚 Legal Insights"
             title="From the Blog"
-            description="Clear, practical legal guidance for individuals, families, and businesses"
+            description="Clear, practical legal guidance for individuals, families, and criminal matters"
         >
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
                 {articles.map((article) => (

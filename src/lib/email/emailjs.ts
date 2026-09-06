@@ -37,8 +37,8 @@ const getPracticeArea = (subject: string): string => {
 
     if (lowerSubject.includes('civil') || lowerSubject.includes('contract') || lowerSubject.includes('damages')) {
         return 'Civil Law'
-    } else if (lowerSubject.includes('business') || lowerSubject.includes('commercial') || lowerSubject.includes('corporate')) {
-        return 'Business Law'
+    } else if (lowerSubject.includes('criminal') || lowerSubject.includes('commercial') || lowerSubject.includes('corporate')) {
+        return 'Criminal Law'
     } else if (lowerSubject.includes('family') || lowerSubject.includes('divorce') || lowerSubject.includes('alimony')) {
         return 'Family Law'
     } else if (lowerSubject.includes('health') || lowerSubject.includes('insurance') || lowerSubject.includes('medical') || lowerSubject.includes('medicare')) {

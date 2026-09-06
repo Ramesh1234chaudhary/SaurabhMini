@@ -217,7 +217,7 @@ export function Footer() {
                             &copy; 2024 {lawyer.name}. All rights reserved.
                         </p>
                         <p className="text-xs text-text-secondary mt-1">
-                            {lawyer.credentials.bar} - {lawyer.title}
+                            10 years experience - {lawyer.title}
                         </p>
                     </div>
 

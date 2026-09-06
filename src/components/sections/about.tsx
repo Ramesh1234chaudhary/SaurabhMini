@@ -149,7 +149,7 @@ export function About() {
                                         <svg className="h-4 w-4 sm:h-5 sm:w-5 text-secondary-500" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                         </svg>
-                                        <span className="text-sm sm:text-base text-text-primary font-medium">{lawyer.credentials.bar}</span>
+                                        <span className="text-sm sm:text-base text-text-primary font-medium">10 years experience</span>
                                     </motion.div>
                                     <motion.div
                                         className="flex items-center space-x-3 p-2 rounded-lg hover:bg-background-tertiary/50 transition-colors"

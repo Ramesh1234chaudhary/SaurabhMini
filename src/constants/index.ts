@@ -26,7 +26,7 @@ export const APP_CONFIG = {
 
 export const SERVICE_CATEGORIES = {
     civil: 'Civil Law',
-    business: 'Business Law',
+    criminal: 'Criminal Law',
     family: 'Family Law',
     labor: 'Labor Law',
     realEstate: 'Real Estate Law',
@@ -46,7 +46,7 @@ export const LEGAL_DOCUMENTS = {
         'Purchase and Sale Contracts',
         'Lease Agreements',
         'Service Contracts',
-        'Business Contracts',
+        'Criminal Contracts',
         'Agreements and Conventions'
     ],
     family: [
@@ -57,8 +57,8 @@ export const LEGAL_DOCUMENTS = {
         'Wills',
         'Adoption'
     ],
-    business: [
-        'Business Formation',
+    criminal: [
+        'Criminal Formation',
         'Corporate Contracts',
         'Mergers and Acquisitions',
         'Compliance',
@@ -84,7 +84,7 @@ export const TESTIMONIALS = [
         name: 'Michael Davis',
         rating: 5,
         text: `${lawyerConfig.name} is very competent and dedicated. I strongly recommend.`,
-        service: 'Business Law',
+        service: 'Criminal Law',
         date: '2024-01-10'
     },
     {

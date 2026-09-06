@@ -31,12 +31,12 @@ export const generateKeywords = (additionalKeywords: string[] = []) => {
     const baseKeywords = [
         'attorney',
         'civil law',
-        'business law',
+        'criminal law',
         'family law',
         'New York',
         'legal counsel',
         LAWYER_CONFIG.lawyer.name,
-        LAWYER_CONFIG.lawyer.credentials.bar,
+        LAWYER_CONFIG.lawyer.credentials.bar.replace('Bar Number: ', ''),
         ...LAWYER_CONFIG.services.map(service => service.title.toLowerCase()),
         ...additionalKeywords,
     ]

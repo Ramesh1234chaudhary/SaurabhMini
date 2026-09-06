@@ -48,7 +48,7 @@ export interface ServiceFeature {
     icon: LucideIcon
     features: string[]
     gradient: string
-    category: 'civil' | 'business' | 'family' | 'real-estate' | 'labor' | 'digital' | 'criminal' | 'other'
+    category: 'civil' | 'criminal' | 'family' | 'real-estate' | 'labor' | 'digital' | 'other'
 }
 
 export interface SocialMedia {
@@ -108,17 +108,17 @@ export const LAWYER_CONFIG: LawyerConfig = {
     lawyer: {
         name: "Saurabh Mani",
         fullName: "Saurabh Mani",
-        title: "Advocate | Civil, Business & Family Law",
+        title: "Advocate | Civil, Criminal & Family Law",
         description:
             "Hello! I'm Saurabh Mani, an advocate practicing in Mau, Uttar Pradesh. I provide dedicated legal representation with a focus on understanding each client's situation and providing practical, professional, and personalized legal guidance.",
         detailedDescription:
-            "Advocate Saurabh Mani provides legal services across civil, business, family, consumer, property, taxation, cheque bounce, RERA, NCLT, and intellectual property matters. With a client-focused approach, he believes in providing transparent legal guidance, careful case preparation, and dedicated representation tailored to the specific needs of every client.",
+            "Advocate Saurabh Mani provides legal services across civil, criminal, family, consumer, property, taxation, cheque bounce, RERA, NCLT, and intellectual property matters. With a client-focused approach, he believes in providing transparent legal guidance, careful case preparation, and dedicated representation tailored to the specific needs of every client.",
         credentials: {
-            bar: "Bar Number: UP05314/2020",
+            bar: "10 years experience",
             location: "Mau, Uttar Pradesh"
         },
         statistics: {
-            experience: "Legal Practice",
+            experience: "10 years",
             casesResolved: "Cases",
             successRate: "Dedication"
         },
@@ -194,7 +194,7 @@ export const LAWYER_CONFIG: LawyerConfig = {
             id: "other-legal-services",
             title: "Other Legal Services",
             description:
-                "Legal assistance across various specialized matters based on the specific requirements of individuals and businesses.",
+                "Legal assistance across various specialized matters based on the specific requirements of individuals and criminal cases.",
             icon: Building,
             features: [
                 "Consumer law matters",
@@ -202,7 +202,7 @@ export const LAWYER_CONFIG: LawyerConfig = {
                 "RERA and real estate matters",
                 "NCLT and corporate matters",
                 "Trademark and copyright matters",
-                "Business and commercial legal matters"
+                "Criminal and commercial legal matters"
             ],
             gradient: "from-yellow-500 to-orange-500",
             category: "other"
@@ -346,7 +346,7 @@ export const LAWYER_CONFIG: LawyerConfig = {
         subjects: [
             "Legal Consultation",
             "Civil Law",
-            "Business & Corporate Law",
+            "Criminal & Corporate Law",
             "Family Law",
             "Consumer Law",
             "Cheque Bounce",
@@ -381,7 +381,7 @@ export const LAWYER_CONFIG: LawyerConfig = {
         highlights: [
             "LL.B Gold Medalist",
             "Practice at District & Sessions Court, Mau",
-            "Focus on Civil, Business & Family Law",
+            "Focus on Civil, Criminal & Family Law",
             "Personalized and transparent legal service"
         ],
 
