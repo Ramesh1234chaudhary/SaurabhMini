@@ -1,6 +1,6 @@
 # 🏛️ LawyerHero - Professional Template for Lawyers
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.5.25-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.17-38bdf8)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -24,7 +24,7 @@ Professional landing page template for lawyers, developed with modern technologi
 
 ### Core
 
-- **Next.js 15.4.6** with App Router + Turbopack
+- **Next.js 15.5.25** with App Router + Turbopack
 - **TypeScript 5.9.2** with strict mode
 - **React 19.1** with Server Components
 - **Tailwind CSS 3.4.17** with custom design system

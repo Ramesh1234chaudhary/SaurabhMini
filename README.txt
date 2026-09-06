@@ -34,7 +34,7 @@ online presence.
 
 ⚙️ REQUIREMENTS
 --------------
-• Node.js 18 or higher
+• Node.js 20 or higher
 • npm or yarn package manager
 • Modern web browser
 • Code editor (VS Code recommended)
@@ -150,7 +150,7 @@ See LICENSE.txt for full details.
 
 💻 TECH STACK
 -------------
-• Next.js 15.4.6 - React framework with App Router
+• Next.js 15.5.25 - React framework with App Router
 • TypeScript 5.9 - Type safety and better development
 • Tailwind CSS 3.4 - Utility-first CSS framework
 • Framer Motion 12.23 - Smooth animations
