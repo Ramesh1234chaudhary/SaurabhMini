@@ -76,7 +76,7 @@ export function Header() {
                     <div className="md:hidden flex items-center space-x-3">
                         <ThemeToggle />
                         <motion.button
-                            className="p-2 text-text-secondary hover:text-text-primary transition-colors"
+                            className="p-2 text-text-secondary hover:text-text-primary transition-colors touch-manipulation"
                             onClick={toggleMenu}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
@@ -98,18 +98,21 @@ export function Header() {
                         >
                             <div className="py-3 space-y-1">
                                 {navigationItems.map((item) => (
-                                    <motion.a
+                                    <a
                                         key={item.href}
                                         href={item.href}
-                                        className={`block border-b-[3px] px-4 py-2 text-base font-medium text-text-secondary hover:text-text-primary transition-colors ${activeNav === item.href ? "border-secondary-500 text-text-primary" : "border-transparent"}`}
-                                        whileHover={{ x: 10 }}
-                                        onClick={() => {
+                                        onClick={(e) => {
                                             setActiveNav(item.href)
                                             setIsMenuOpen(false)
+                                            if (item.href.startsWith('#')) {
+                                                const target = document.querySelector(item.href)
+                                                target?.scrollIntoView({ behavior: 'smooth' })
+                                            }
                                         }}
+                                        className={`block border-b-[3px] px-4 py-2 text-base font-medium text-text-secondary hover:text-text-primary transition-colors ${activeNav === item.href ? "border-secondary-500 text-text-primary" : "border-transparent"}`}
                                     >
                                         {item.label}
-                                    </motion.a>
+                                    </a>
                                 ))}
                             </div>
                         </motion.div>
