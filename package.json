@@ -1,0 +1,148 @@
+{
+  "name": "lawyer-hero-template",
+  "version": "1.0.0",
+  "description": "Professional landing page template for lawyers and law firms. Built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion. Features responsive design, contact forms, SEO optimization, and accessibility compliance.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcordeirodev/lawyer-hero-envato.git"
+  },
+  "homepage": "https://github.com/bcordeirodev/lawyer-hero-envato",
+  "keywords": [
+    "lawyer",
+    "attorney",
+    "law-firm",
+    "legal",
+    "template",
+    "landing-page",
+    "website",
+    "nextjs",
+    "typescript",
+    "tailwind",
+    "react",
+    "responsive",
+    "professional",
+    "business",
+    "modern",
+    "seo",
+    "accessibility",
+    "framer-motion",
+    "envato",
+    "themeforest"
+  ],
+  "author": {
+    "name": "LawyerHero Template",
+    "email": "contact@lawyerhero.template",
+    "url": "https://github.com/bcordeirodev/lawyer-hero-envato"
+  },
+  "contributors": [
+    {
+      "name": "Bruno Cordeiro",
+      "email": "bcordeiro.dev@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:all": "npm run lint && npm run type-check && npm run test:run && npm run test:e2e",
+    "analyze": "cross-env ANALYZE=true npm run build",
+    "preview": "npm run build && npm run start",
+    "export": "next build && next export",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "prepare-envato": "node scripts/prepare-envato.js",
+    "quality-check": "npm run lint && npm run type-check && npm run test:run",
+    "full-test": "npm run quality-check && npm run test:e2e"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@hookform/resolvers": "^5.2.1",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.536.0",
+    "next": "15.4.5",
+    "postcss": "^8.5.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.62.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^15.4.5",
+    "@playwright/test": "^1.54.2",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "chrome-launcher": "^1.1.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "eslint-plugin-testing-library": "^7.1.1",
+    "jsdom": "^25.0.1",
+    "lighthouse": "^12.2.1",
+    "playwright": "^1.54.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "main": "next.config.js",
+  "files": [
+    "src/**/*",
+    "public/**/*",
+    "*.md",
+    "*.json",
+    "*.js",
+    "*.ts"
+  ],
+  "envato": {
+    "category": "Site Templates",
+    "subcategory": "Specialty Pages",
+    "tags": [
+      "lawyer",
+      "attorney", 
+      "law firm",
+      "legal",
+      "professional",
+      "business",
+      "landing page",
+      "responsive",
+      "modern",
+      "clean"
+    ],
+    "live_preview": "https://lawyer-hero-demo.vercel.app",
+    "version": "1.0.0",
+    "framework": "Next.js 15",
+    "compatibility": "All Modern Browsers"
+  }
+}
